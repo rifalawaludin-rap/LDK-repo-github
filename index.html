@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UKM Lembaga Dakwah Kampus (LDK)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <h1 class="logo">Lembaga Dakwah Kampus STIKOM CKI</h1>
+      <ul class="nav-links">
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#bph">Pengurus BPH</a></li>
+        <li><a href="#pendaftaran" class="btn-nav">Daftar Sekarang</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero / Banner -->
+  <header class="hero">
+    <div class="logo">
+      <h2>Ahlan Wa Sahlan di UKM Lembaga Dakwah Kampus Stikom CKI</h2>
+      <p>Wadah ukhuwah, pembinaan diri, dan syiar Islam di lingkungan kampus.</p>
+      <a href="#pendaftaran" class="btn-primary">Daftar Sekarang</a>
+    </div>
+  </header>
+
+  <!-- Section Profil UKM -->
+  <section id="profil" class="section">
+    <div class="container">
+      <h2 class="section-title">Profil UKM</h2>
+      <div class="profil-card">
+        <p><strong>Lembaga Dakwah Kampus (LDK) STIKOM CKI</strong> adalah organisasi kemahasiswaan yang bergerak di bidang syiar Islam dan pembinaan karakter muslim di lingkungan kampus STIKOM CKI. UKM LDK hadir sebagai sarana untuk mempererat ukhuwah Islamiyah, mengasah potensi diri, serta menebar kebaikan dan nilai-nilai keislaman di civitas akademika.</p>
+        
+        <h3>Visi</h3>
+        <p>Mewujudkan generasi mahasiswa yang berwawasan luas, unggul dalam ilmu akademik, serta memiliki bekal pemahaman agama yang kuat, sehingga tidak hanya kompeten dalam ilmu perkuliahan tetapi juga mampu memberikan dampak keagamaan demi terciptanya lingkungan kampus yang madani.</p>
+        <h3>Misi</h3>
+        <ul>
+          <li>Menyelenggarakan kajian, diskusi,
+dan mentoring keagamaan secara
+berkala.</li>
+          <li>Menyediakan wadah syiar dan
+dakwah kreatif di lingkungan
+kampus.</li>
+          <li>Menggerakkan aksi sosial berbasis
+nilai-nilai keagamaan bagi warga
+</li>
+           <li>Menyediakan dan mengoptimalkan
+fasilitas penunjang kegiatan
+keagamaan.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Badan Pengurus Harian (BPH) -->
+  <section id="bph" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Badan Pengurus Harian (BPH)</h2>
+      <div class="bph-grid">
+        
+        <div class="bph-card">
+          <img src=ADNAN.jpeg alt="Foto Ketua Umum">
+          <h3>Adnan Ade Ryan</h3>
+          <p class="jabatan">Ketua Umum</p>
+        </div>
+
+        <div class="bph-card">
+          <img src= Rifal.jpeg alt="Foto Wakil Ketua">
+          <h3>Rifal Awaludin priantara</h3>
+          <p class="jabatan">Wakil Ketua Umum</p>
+        </div>
+
+        <div class="bph-card">
+          <img src=Zaky.jpeg alt="Foto Sekretaris">
+          <h3>Zaky Baihaqi</h3>
+          <p class="jabatan">Sekretaris Umum</p>
+        </div>
+
+        <div class="bph-card">
+          <img src= Nuriswan.jpeg alt="Foto Bendahara">
+          <h3>Rokan Nuriswan</h3>
+          <p class="jabatan">Bendahara</p>
+        </div>
+
+        <div class="bph-card">
+          <img src=Rahman.jpeg alt="Foto Bendahara">
+          <h3>Adurahman Al Mahiy</h3>
+          <p class="jabatan">Keilmuan</p>
+        </div>
+
+        <div class="bph-card">
+          <img src=Faiz.jpeg alt="Foto Bendahara">
+          <h3>Faiz Amirul Jihad</h3>
+          <p class="jabatan">Humas 1</p>
+        </div>
+
+        <div class="bph-card">
+          <img src=ahmad.jpeg alt="Foto Bendahara">
+          <h3>Achmad Syaefullah</h3>
+          <p class="jabatan">Humas 2</p>
+        </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Section Formulir Pendaftaran -->
+  <section id="pendaftaran" class="section">
+    <div class="container">
+      <h2 class="section-title">Formulir Pendaftaran Anggota Baru</h2>
+      <div class="form-wrapper">
+        <form action="proses.php" method="POST" enctype="multipart/form-data">
+          
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama_lengkap" placeholder="Masukkan nama lengkap" required>
+          </div>
+
+          <div class="form-group">
+            <label for="nim">NIM (Nomor Induk Mahasiswa)</label>
+            <input type="text" id="nim" name="nim" placeholder="Masukkan NIM" required>
+          </div>
+
+          <div class="form-group">
+            <label for="prodi">Program Studi</label>
+            <select id="prodi" name="prodi" required>
+                <option value="" disabled selected>Pilih Program Studi</option>
+                <option value="Teknik Informatika">Teknik Informatika</option>
+                <option value="Sistem Informasi">Sistem Informasi</option>
+                <option value="Bisnis Digital">Bisnis Digital</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="hp">No. Handphone Aktif (WhatsApp)</label>
+            <input type="tel" id="hp" name="no_hp" placeholder="Contoh: 081234567890" required>
+          </div>
+
+          <div class="form-group">
+            <label for="bukti_ig">Bukti Sudah Follow Instagram (.jpg)</label>
+            <input type="file" id="bukti_ig" name="bukti_instagram" accept=".jpg, .jpeg" required>
+            <small>Format file wajib .jpg atau .jpeg</small>
+          </div>
+
+          <button type="submit" class="btn-submit">Kirim Pendaftaran</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 UKM LDK STIKOM. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
